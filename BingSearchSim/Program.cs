@@ -58,9 +58,9 @@ namespace BingSearchSim
                 for (int i = 0; i < NumOfMobileSearches; i++)
                 {
                     MakeSearch(queryProvider.GetNextRandomQuery(), driver, url);
-                    int sleepSeconds = rnd.Next(2, 10) * 1000;
+                    int sleepSeconds = rnd.Next(2, 10);
                     logger.Info("Sleeping for {0} seconds.", sleepSeconds);
-                    Thread.Sleep(sleepSeconds);
+                    Thread.Sleep(sleepSeconds * 1000);
                 }
 
                 driver.Quit();
