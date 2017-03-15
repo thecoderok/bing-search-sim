@@ -14,8 +14,8 @@ namespace BingSearchSim
         private static readonly ILogger logger = LogManager.GetCurrentClassLogger();
         private static readonly Random rnd = new Random();
 
-        private const int NumOfDesktopSearches = 32;
-        private const int NumOfMobileSearches = 22;
+        private const int NumOfDesktopSearches = 40;
+        private const int NumOfMobileSearches = 30;
 
         static void Main(string[] args)
         {
